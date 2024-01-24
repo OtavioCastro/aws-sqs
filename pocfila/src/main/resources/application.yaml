@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    aws:
+      endpoint: 'http://localhost:4566'
+      region:
+        static: 'us-east-1'
+      credentials:
+        access-key: 'access-key-teste'
+        secret-key: 'secret-key-teste'
+        profile:
+          name: default
+
+logging:
+  level:
+    io:
+      awspring:
+        cloud: debug
